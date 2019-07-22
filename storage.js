@@ -1,13 +1,14 @@
 'use strict';
 
 const fs = require('fs');
+const crypto = require('crypto');
 
 const writeCache = {};
 
 async function storeComment(comment) {
-  const key = encodeURIComponent(comment.itemId);
+  const key = comment.itemId;
   if (!writeCache[key]) {
-    writeCache[key] = fs.createWriteStream(`./comments/${key}.jsonl`, {
+    writeCache[key] = fs.createWriteStream(`./comments/${hash(key)}.jsonl`, {
       flags: 'a',
     });
   }
@@ -23,11 +24,12 @@ async function storeComment(comment) {
 }
 
 async function readComments(itemId) {
-  const key = encodeURIComponent(itemId);
+  const key = itemId;
   const data = await new Promise((resolve, reject) => {
-    fs.readFile(`./comments/${key}.jsonl`, 'utf8', (err, data) => {
+    fs.readFile(`./comments/${hash(key)}.jsonl`, 'utf8', (err, data) => {
       if (err) {
-        return reject(err);
+        console.error(err);
+        return resolve(``);
       }
       resolve(data);
     });
@@ -42,3 +44,10 @@ module.exports = {
   storeComment,
   readComments,
 };
+
+function hash(str) {
+  return crypto
+    .createHash('md5')
+    .update(str)
+    .digest('hex');
+}
