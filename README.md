@@ -41,7 +41,7 @@ the port in `config.js`.
 ## Frontend Setup
 
 - Clone https://github.com/JustComments/jc-widget and run `npm install`.
-- Adjust `API_ENDPOINT` variable in Webpack via CLI and or in the source to
+- Adjust `API_ENDPOINT` variable in Webpack via CLI or in the source to
   point to 3434.
 - Run `npm start` and open `http://localhost:3333/`.
 
