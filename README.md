@@ -1,6 +1,11 @@
-# jc-server
-
-Basic open-source implementation of a server for JustComments
+<h1 align="center">
+  JustComments Server
+<p align="center">
+  <a href="https://just-comments.com/demo.html"> <img src="https://just-comments.com/assets/demo4.png" alt="JustComments demo"> </a>
+</p>
+<p align="center">
+  Basic open-source implementation of a server for JustComments
+</p>
 
 The server is implemented in NodeJS. Required version is 8+;
 
