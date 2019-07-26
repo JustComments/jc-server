@@ -1,5 +1,6 @@
 <h1 align="center">
   JustComments Server
+</h1>
 <p align="center">
   <a href="https://just-comments.com/demo.html"> <img src="https://just-comments.com/assets/demo4.png" alt="JustComments demo"> </a>
 </p>
