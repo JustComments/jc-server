@@ -27,7 +27,7 @@ The server is implemented in NodeJS. Required version is 8+;
 - higly-available & distributed storage
 
 To have these features, please see the paid hosted version:
-[JustComments](https://just-comments)
+[JustComments](https://just-comments.com)
 
 ## Server Setup
 
