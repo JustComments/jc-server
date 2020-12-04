@@ -13,7 +13,7 @@
     "ajv": "6.10.2",
     "cors": "2.8.5",
     "express": "4.17.1",
-    "highlight.js": "9.15.8",
+    "highlight.js": "10.4.1",
     "marked": "0.7.0",
     "uuid": "3.3.2"
   }
