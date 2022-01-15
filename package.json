@@ -14,7 +14,7 @@
     "cors": "2.8.5",
     "express": "4.17.1",
     "highlight.js": "9.15.8",
-    "marked": "0.7.0",
+    "marked": "4.0.10",
     "uuid": "3.3.2"
   }
 }
