@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "ajv": "6.10.2",
+    "ajv": "6.12.3",
     "cors": "2.8.5",
     "express": "4.17.1",
     "highlight.js": "9.15.8",
